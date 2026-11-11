@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiago Cardoso | Geospatial & Field Operations</title>
+    <title>Tiago Cardoso | Da Indústria à Engenharia Geoespacial</title>
     <style>
         body {
             background-color: #0b0f19;
             color: #f3f4f6;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 40px 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
         }
         .hero {
-            max-width: 700px;
             padding: 40px;
             border-left: 4px solid #38bdf8;
             background: rgba(17, 24, 39, 0.7);
             border-radius: 0 12px 12px 0;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 40px;
         }
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
             color: #38bdf8;
+        }
+        h2 {
+            color: #38bdf8;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            border-bottom: 2px solid #1e293b;
+            padding-bottom: 10px;
         }
         p {
             font-size: 1.1rem;
@@ -44,14 +54,107 @@
             margin-bottom: 15px;
             font-weight: 600;
         }
+        /* Linha do tempo elegante */
+        .timeline {
+            position: relative;
+            border-left: 2px solid #1e293b;
+            margin-left: 20px;
+            padding-left: 30px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -37px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #38bdf8;
+            border: 2px solid #0b0f19;
+        }
+        .year {
+            font-size: 0.85rem;
+            color: #38bdf8;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .role {
+            font-size: 1.2rem;
+            color: #f3f4f6;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+        .company {
+            font-size: 0.95rem;
+            color: #9ca3af;
+            margin-bottom: 8px;
+        }
+        .highlight {
+            font-size: 0.95rem;
+            color: #d1d5db;
+            background: rgba(30, 41, 59, 0.4);
+            padding: 10px 15px;
+            border-radius: 6px;
+            border-left: 3px solid #38bdf8;
+        }
     </style>
 </head>
 <body>
 
-    <div class="hero">
-        <span class="tag">Exploração • Dados • Engenharia</span>
-        <h1>Tiago Cardoso</h1>
-        <p>Mais de uma década a decifrar a crosta terrestre em operações globais de alto risco. Hoje, canalizo essa bagagem de terreno para a Engenharia Geoespacial e Ciência de Dados na Universidade do Porto (FCUP).</p>
+    <div class="container">
+        <!-- Cabeçalho de Impacto -->
+        <div class="hero">
+            <span class="tag">Da Indústria à Inteligência Espacial</span>
+            <h1>Tiago Cardoso</h1>
+            <p>De técnico em química industrial a geólogo em operações offshore de alto risco[cite: 5, 7]. Hoje, canalizo mais de duas décadas de polivalência técnica e gestão internacional para a Engenharia Geoespacial na FCUP[cite: 3, 5, 7].</p>
+        </div>
+
+        <!-- Linha do Tempo da Jornada -->
+        <h2>A Linha do Explorador</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span class="year">2026 – Presente</span>
+                <div class="role">Mestrado em Engenharia Geoespacial</div>
+                <div class="company">Faculdade de Ciências da Universidade do Porto (FCUP)[cite: 3]</div>
+                <div class="highlight">Foco na transição tecnológica, modelação territorial, SIG avançado e automação com Python.</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year">2022 – 2024</span>
+                <div class="role">VP de Negócios & Operações</div>
+                <div class="company">Flexible Pipe Supplies[cite: 3, 5]</div>
+                <div class="highlight">Estruturação de negócios e infraestruturas energéticas para tubos flexíveis RTP, gerindo prospecção global de larga escala[cite: 5].</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year">2014 – 2022</span>
+                <div class="role">Gestão de Sinistros & Country Manager (LATAM)</div>
+                <div class="company">Weisserberg, Aon, Mapfre, Braemar[cite: 3, 5]</div>
+                <div class="highlight">Avaliação de grandes riscos industriais, inspeções de pré-risco e consultoria para ativos complexos de infraestruturas, energia e mineração na América Latina[cite: 3, 5].</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year">2011 – 2013</span>
+                <div class="role">Geólogo de Operações (Mudlogger)</div>
+                <div class="company">Schlumberger, 3R Petroleum, Geodrill[cite: 3, 5]</div>
+                <div class="highlight">Atuação crítica em sondagens e exploração petrolífera (incluindo pré-sal para a Petrobras), monitorização de dados de subsuperfície e gestão geotécnica no terreno[cite: 3, 5].</div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="year">2003 – 2011</span>
+                <div class="role">Raízes Técnicas: Técnico Químico & Formação em Geologia</div>
+                <div class="company">Castrol Lubrificantes, INEA, UFRRJ[cite: 3, 5]</div>
+                <div class="highlight">Início no chão de fábrica em controlo de qualidade laboratorial, seguido pela licenciatura em Geologia e estágios em geoprocessamento e gestão ambiental[cite: 3, 5].</div>
+            </div>
+
+        </div>
     </div>
 
 </body>
